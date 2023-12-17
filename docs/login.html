@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Focus - Sign In</title>
+    <style>
+        @font-face {
+            font-family: pers1;
+            src: url("Font/FredokaOne-Regular.woff");
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+        h1 {
+            color: #071828;
+            font-family: pers1;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .login-container input[type="text"], .login-container input[type="password"], .login-container input[type="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 12px;
+        }
+        .login-container button {
+            background-color: #071828;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 12px;
+        }
+        .login-container button:hover {
+            opacity: 0.8;
+        }
+        #backButton {
+            background-color: #071828;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        #backButton:hover {
+            opacity: 0.8;
+        }
+        .register {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function signIn() {
+            alert("We're sorry, but we couldn't sign you in right now. Please check your internet connection and try again later. If the problem persists, contact our support team at support@focus.com. Thank you for your patience and understanding.");{ location.href='index.html'; };
+        }
+    </script>
+</head>
+<body>
+    <button id="backButton" onclick="location.href='index.html'">Back</button>
+    <h1>Focus - Sign In</h1>
+    <div class="login-container">
+        <label for="uname"><b>Email or Username</b></label>
+        <input type="text" placeholder="Enter your email or your username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter your password" name="psw" required>
+
+        <button type="submit" onclick="signIn()">Sign In</button>
+        <div class="register">
+            <p>Don't have an account? <a href="register.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
