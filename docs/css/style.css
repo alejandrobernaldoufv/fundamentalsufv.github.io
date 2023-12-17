@@ -211,6 +211,9 @@ nav ul li a {
 #backButton:hover {
     opacity: 0.8;
 }
-
+.course-content {
+    font-family: pers1;
+    color: #071828;
+}
 
 
