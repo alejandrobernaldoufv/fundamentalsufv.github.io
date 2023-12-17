@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Focus - Sign In</title>
+    <title>Focus - Sign up</title>
     <style>
         @font-face {
             font-family: pers1;
-            src: url("../Font/FredokaOne-Regular.woff");
+            src: url("../../Font/FredokaOne-Regular.woff");
         }
         body {
             font-family: Arial, sans-serif;
@@ -69,25 +69,26 @@
             margin-top: 10px;
         }
     </style>
-    <script>
-        function signIn() {
-            alert("We're sorry, but we couldn't sign you in right now. Please check your internet connection and try again later. If the problem persists, contact our support team at support@focus.com. Thank you for your patience and understanding.");{ location.href='index.html'; };
-        }
-    </script>
 </head>
 <body>
-    <button id="backButton" onclick="location.href='../index.html'">Back</button>
-    <h1>Focus - Sign In</h1>
+    <button id="backButton" onclick="location.href='../topic.html'">Back</button>
+    <h1>Focus - Sign up</h1>
     <div class="login-container">
-        <label for="uname"><b>Email or Username</b></label>
-        <input type="text" placeholder="Enter your email or your username" name="uname" required>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter your username" name="uname" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter your email" name="email" required>
 
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter your password" name="psw" required>
 
-        <button type="submit" onclick="signIn()">Sign In</button>
+        <label for="psw-confirm"><b>Confirm password</b></label>
+        <input type="password" placeholder="Confirm your password" name="psw-confirm" required>
+
+        <button type="submit" onclick="location.href='login.html'">Sign up</button>
         <div class="register">
-            <p>Don't have an account? <a href="register.html">Sign up</a></p>
+            <p>Already have an account? <a href="login.html">Sign in</a></p>
         </div>
     </div>
 </body>
